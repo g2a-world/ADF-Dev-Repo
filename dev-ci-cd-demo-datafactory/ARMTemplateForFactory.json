@@ -26,22 +26,6 @@
 						"typeProperties": {
 							"waitTimeInSeconds": 5
 						}
-					},
-					{
-						"name": "Wait Activity2",
-						"type": "Wait",
-						"dependsOn": [
-							{
-								"activity": "Wait Activity1",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 1
-						}
 					}
 				],
 				"policy": {
