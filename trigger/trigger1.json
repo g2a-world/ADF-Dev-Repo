@@ -1,0 +1,32 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_pipeline_1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2023-03-28T21:01:00",
+				"timeZone": "Eastern Standard Time",
+				"schedule": {
+					"minutes": [
+						5
+					],
+					"hours": [
+						17
+					]
+				}
+			}
+		}
+	}
+}
